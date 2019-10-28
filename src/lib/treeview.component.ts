@@ -90,6 +90,10 @@ export class TreeviewComponent implements OnChanges {
         this.createHeaderTemplateContext();
     }
 
+    public getFilterPlaceHolder(): string{
+        return this.config.placeHolder;
+    }
+
     onAllCollapseExpand() {
         this.allItem.collapsed = !this.allItem.collapsed;
         this.filterItems.forEach(item => item.setCollapsedRecursive(this.allItem.collapsed));

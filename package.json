@@ -1,6 +1,6 @@
 {
   "name": "ngx-treeview",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "license": "MIT",
   "description": "An Angular treeview component with checkbox",
   "scripts": {
@@ -29,13 +29,13 @@
     "recursive",
     "angular tree component"
   ],
-  "author": "Leo Vo <leovo2708@gmail.com>",
+  "author": "Matthew Thomas",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leovo2708/ngx-treeview.git"
+    "url": "git+https://github.com/MThomas564/ngx-treeview.git"
   },
   "bugs": {
-    "url": "https://github.com/leovo2708/ngx-treeview/issues"
+    "url": "https://github.com/MThomas564/ngx-treeview/issues"
   },
   "main": "src/index.js",
   "module": "src/index.js",
