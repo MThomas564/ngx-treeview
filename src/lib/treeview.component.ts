@@ -90,7 +90,7 @@ export class TreeviewComponent implements OnChanges {
         this.createHeaderTemplateContext();
     }
 
-    public getFilterPlaceHolder(): string{
+    public getFilterPlaceHolder(): string {
         return this.config.placeHolder;
     }
 
@@ -170,6 +170,11 @@ export class TreeviewComponent implements OnChanges {
             this.filterItems = filterItems;
         } else {
             this.filterItems = this.items;
+            this.filterItems.forEach(element => {
+                if (element instanceof TreeviewItem) {
+                    element.correctChecked();
+                }
+            });
         }
 
         this.updateCheckedOfAll();
