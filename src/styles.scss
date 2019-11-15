@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
 
 body {
     padding-top: 5rem;
@@ -9,4 +9,58 @@ h3 {
     margin-bottom: 20px;
     padding-bottom: 9px;
     border-bottom: 1px solid #eee;
+}
+
+::ng-deep .treeview-item {
+    white-space:nowrap
+}
+
+::ng-deep .treeview-item.treeview-item {
+    margin-left:2rem
+}
+
+::ng-deep treeview-container {
+    text-align: left;
+}
+
+::ng-deep div.treeview-header {
+    text-align: left;
+    height: 65px;
+}
+
+::ng-deep div.treeview-header .row-filter {
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+}
+
+::ng-deep div.treeview-header > div:nth-child(2) {
+    padding-left: 15px;
+    width: 100%;
+    display: block;
+}
+
+::ng-deep div.treeview-header > div:nth-child(2) > div.row {
+    width: 100%;
+    display: block;
+}
+
+/* width */
+::ng-deep .treeview-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::ng-deep .treeview-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::ng-deep .treeview-container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::ng-deep .treeview-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

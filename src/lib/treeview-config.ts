@@ -7,7 +7,7 @@ export class TreeviewConfig {
     hasCollapseExpand = false;
     decoupleChildFromParent = false;
     maxHeight = 500;
-    placeHolder = 'filter'
+    placeHolder = 'filter';
 
     get hasDivider(): boolean {
         return this.hasFilter || this.hasAllCheckBox || this.hasCollapseExpand;
